@@ -3,6 +3,11 @@ services:
     name: promo-screenshot-app
     env: python
     plan: free
+    envVars:
+      - key: PLAYWRIGHT_BROWSERS_PATH
+        value: /opt/render/project/.cache/ms-playwright
+      - key: PYTHONUNBUFFERED
+        value: "1"
     buildCommand: |
       pip install -r requirements.txt
       python -m playwright install --with-deps chromium
