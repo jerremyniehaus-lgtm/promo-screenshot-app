@@ -1,2 +1,5 @@
 streamlit==1.40.1
 reportlab==4.2.5
+pillow==10.4.0
+playwright==1.49.1
+nest_asyncio==1.6.0
